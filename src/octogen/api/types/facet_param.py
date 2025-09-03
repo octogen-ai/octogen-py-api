@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
-from typing import List
 from typing_extensions import Literal, Required, TypedDict
+
+from .._types import SequenceNotStr
 
 __all__ = ["FacetParam"]
 
@@ -17,7 +18,7 @@ class FacetParam(TypedDict, total=False):
     gender (The target gender for the product (e.g., men, women, unisex))
     """
 
-    values: Required[List[str]]
+    values: Required[SequenceNotStr[str]]
     """List of values to filter by.
 
     They should all be lowercase. Facet values can be phrases, so make sure to

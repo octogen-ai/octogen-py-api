@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
-from typing import List, Optional
+from typing import Optional
 from typing_extensions import Literal, Required, TypedDict
+
+from .._types import SequenceNotStr
 
 __all__ = ["CatalogStyleAndTagsSearchParams"]
 
@@ -11,9 +13,9 @@ __all__ = ["CatalogStyleAndTagsSearchParams"]
 class CatalogStyleAndTagsSearchParams(TypedDict, total=False):
     type: Required[str]
 
-    styles: Required[List[str]]
+    styles: Required[SequenceNotStr[str]]
 
-    tags: Required[List[str]]
+    tags: Required[SequenceNotStr[str]]
 
     compact_mode: Optional[Literal["compact", "medium"]]
 
