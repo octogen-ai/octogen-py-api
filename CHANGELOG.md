@@ -1,5 +1,37 @@
 # Changelog
 
+## 0.1.0-alpha.10 (2025-09-06)
+
+Full Changelog: [v0.1.0-alpha.9...v0.1.0-alpha.10](https://github.com/octogen-ai/octogen-py-api/compare/v0.1.0-alpha.9...v0.1.0-alpha.10)
+
+### Features
+
+* **client:** support file upload requests ([99dbb4a](https://github.com/octogen-ai/octogen-py-api/commit/99dbb4aae49c14d9d004dd89f467d9cde686e9fb))
+* improve future compat with pydantic v3 ([0823b45](https://github.com/octogen-ai/octogen-py-api/commit/0823b45cd9b197d50edb0d62955507fe57573a50))
+* **types:** replace List[str] with SequenceNotStr in params ([b1ec08c](https://github.com/octogen-ai/octogen-py-api/commit/b1ec08caeb6ff73337e2a1c842a00f10f87ef668))
+
+
+### Bug Fixes
+
+* avoid newer type syntax ([33bdce3](https://github.com/octogen-ai/octogen-py-api/commit/33bdce3ebb4c4082279dcddfd649165c55c30dc5))
+* **parsing:** ignore empty metadata ([5967786](https://github.com/octogen-ai/octogen-py-api/commit/59677861b8c9a243f2c7c7254af3046cd1613587))
+* **parsing:** parse extra field types ([b397693](https://github.com/octogen-ai/octogen-py-api/commit/b397693fae6e82372bf5715990760c511819ef6c))
+
+
+### Chores
+
+* **internal:** add Sequence related utils ([cb59608](https://github.com/octogen-ai/octogen-py-api/commit/cb59608e12a0fda154afc3d2b15f09090978c664))
+* **internal:** change ci workflow machines ([dec8011](https://github.com/octogen-ai/octogen-py-api/commit/dec8011c87aa78a3b377b342fb5976dc5c572701))
+* **internal:** codegen related update ([b5a9ba0](https://github.com/octogen-ai/octogen-py-api/commit/b5a9ba09b3e0aa2dc2c71dcf99f76c79c07402e9))
+* **internal:** fix ruff target version ([eac3fd0](https://github.com/octogen-ai/octogen-py-api/commit/eac3fd08cbcfd2982e1d1f9846cd0a81a8621915))
+* **internal:** move mypy configurations to `pyproject.toml` file ([b48aff1](https://github.com/octogen-ai/octogen-py-api/commit/b48aff1ec0d302d10700cbd34bfe619eb96a3e65))
+* **internal:** update comment in script ([eb66b01](https://github.com/octogen-ai/octogen-py-api/commit/eb66b010afcc6d0e5279ada9b320ce3060cf441f))
+* **internal:** update pyright exclude list ([17dd063](https://github.com/octogen-ai/octogen-py-api/commit/17dd0630134785adc94f9d5663c784158c4e82e3))
+* **project:** add settings file for vscode ([dcfa148](https://github.com/octogen-ai/octogen-py-api/commit/dcfa14865010ffc5c9d211fe56dd87946e223548))
+* **tests:** simplify `get_platform` test ([494f28a](https://github.com/octogen-ai/octogen-py-api/commit/494f28a7c6ba9073bb13595c28af0a60dc616dce))
+* update @stainless-api/prism-cli to v5.15.0 ([4fbfaa4](https://github.com/octogen-ai/octogen-py-api/commit/4fbfaa4aa11b1c269afde5dffb3bf40089f6ffc2))
+* update github action ([5ce406b](https://github.com/octogen-ai/octogen-py-api/commit/5ce406b1a568584e49014bbd6359fbf2101cb5d7))
+
 ## 0.1.0-alpha.9 (2025-07-16)
 
 Full Changelog: [v0.1.0-alpha.8...v0.1.0-alpha.9](https://github.com/octogen-ai/octogen-py-api/compare/v0.1.0-alpha.8...v0.1.0-alpha.9)
