@@ -13,7 +13,7 @@ from ..types import (
     catalog_agent_search_params,
     catalog_style_and_tags_search_params,
 )
-from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven, FileTypes
+from .._types import NOT_GIVEN, Body, Query, Headers, NotGiven, FileTypes, SequenceNotStr
 from .._utils import extract_files, maybe_transform, deepcopy_minimal, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -140,8 +140,8 @@ class CatalogResource(SyncAPIResource):
         self,
         *,
         type: str,
-        styles: List[str],
-        tags: List[str],
+        styles: SequenceNotStr[str],
+        tags: SequenceNotStr[str],
         compact_mode: Optional[Literal["compact", "medium"]] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -432,8 +432,8 @@ class AsyncCatalogResource(AsyncAPIResource):
         self,
         *,
         type: str,
-        styles: List[str],
-        tags: List[str],
+        styles: SequenceNotStr[str],
+        tags: SequenceNotStr[str],
         compact_mode: Optional[Literal["compact", "medium"]] | NotGiven = NOT_GIVEN,
         limit: int | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
